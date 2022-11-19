@@ -1,0 +1,72 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+        <h1><%= title %></h1>
+        <form class="form" method="post">
+
+          <div class="form-group">
+            <label for="nameTextField">Name</label>
+            <input type="text" class="form-control"
+            id="nameTextField"
+            placeholder="Please enter the Name of the MVP candidate"
+            name="name" 
+            value="<%= mvp.name %>"
+            required>
+          </div>
+
+          <div class="form-group">
+            <label for="authorTextField">Age</label>
+            <input type="text" class="form-control"
+            id="ageTextField"
+            placeholder="Please enter the Age of the MVP player"
+            name="age"
+            value="<%= mvp.age %>"
+            required>
+          </div>
+
+          <div class="form-group">
+            <label for="publishedTextField">Team</label>
+            <input type="text" class="form-control"
+            id="teamTextField"
+            placeholder="Please enter the Team the player has won the award in"
+            name="team"
+            value="<%= mvp.team %>" 
+            required>
+          </div>
+
+          <div class="form-group">
+            <label for="championTextField">Championships</label>
+            <textarea type="text" class="form-control"
+            id="descTextField"
+            placeholder="Please enter how many championship rings this player has acquired"
+            name="championships" required>
+            <%= mvp.championships %>
+            </textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="historyTextField">History</label>
+            <input type="number" class="form-control"
+            id="priceTextField"
+            placeholder="Please enter the History of the player in the NBA"
+            name="history" 
+            value="<%= mvp.history %>"
+            required>
+          </div>
+          <br>
+        <button class="btn-btn-primary" type="submit">
+        <i class="fas fa-edit"></i>Submit</button>
+
+        <a href="/book-list" class="btn btn-warning">
+            <i class="fas fa-undo"></i>Cancel</a>
+        </form>
+     </div>
+  </div>
+ </div>
+
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>

@@ -1,0 +1,86 @@
+/* Custom css goes here *\
+*{
+    margin: 0;
+    padding: 0;
+}
+/*code for the body of the contact me page*/
+body{ 
+    background: #02ccff;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+button{ /*code for the submit button on contact page*/
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline:none;
+    color:#fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.copyright_footer{ /*code for the footer class*/
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color: #a8a8a8;
+    line-height: 3;
+    text-align: center;
+    left: 0;
+
+}
+
+
+
